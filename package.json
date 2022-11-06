@@ -1,0 +1,24 @@
+{
+  "name": "toturial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-intro.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seyha30/toturial.git"
+  },
+  "author": "sseyha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seyha30/toturial/issues"
+  },
+  "homepage": "https://github.com/seyha30/toturial#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "jquery": "^3.6.1",
+    "lodash": "^4.17.21"
+  }
+}

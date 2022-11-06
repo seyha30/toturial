@@ -1,24 +1,14 @@
+const http = require('http')
+const server = http.createServer((reg,res) => {
 
-//  GLOBALS - No window
-// __dirname - path to current directory
-// __filename - file name
-// require   - function to use modules(CommonJS)
-// module    - info about current module (file)
-// process   - info about env where the program is being executed
+if(reg.url === '/') {
+    res.end('Welcome to our home page') 
+}
+if(reg.url === '/about') {
 
-const amount = 90
-if(amount < 10) {
-    console.log('small number')
-}else {
-    console.log('large number')
 }
 
+res.end(`<h1>Oops</h1>`)
 
-
-console.log(`hey it's my first node app`)
-console.log(__dirname)
-setInterval(() => {
-console.log('Hello World !')
-},1000)
-
-
+})
+server.listen(6000) 
