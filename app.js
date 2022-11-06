@@ -13,9 +13,6 @@ if(amount < 10) {
     console.log('large number')
 }
 
-const os = require('os')
-
-console.log(os.userInfo)
 
 
 console.log(`hey it's my first node app`)
@@ -23,4 +20,5 @@ console.log(__dirname)
 setInterval(() => {
 console.log('Hello World !')
 },1000)
+
 
