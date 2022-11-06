@@ -12,17 +12,15 @@ if(amount < 10) {
 }else {
     console.log('large number')
 }
+
+const os = require('os')
+
+console.log(os.userInfo)
+
+
 console.log(`hey it's my first node app`)
 console.log(__dirname)
 setInterval(() => {
 console.log('Hello World !')
 },1000)
 
-const names = require('./4-name')
-const sayHi = require('./5-utils')
-
-console.log(names)
-sayHi('susan')
-sayHi('john')
-sayHi('peter')
-sayHi(names.john)
