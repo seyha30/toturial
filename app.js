@@ -1,5 +1,9 @@
-const _ = require('lodash')
-const items = [1,[2,[3,[4,[5]]]]]
-const newItems = _.flattenDeep(items)
-console.log(newItems)
-console.log('123')
+const express = require('express')
+const app = express() 
+app.use(express.static('./public'))
+app.get('/', (req , res) => {
+    res.send('home')
+   })
+app.listen(9000, () => {
+    console.log('sever listening in port ${9000}')
+})
